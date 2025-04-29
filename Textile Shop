@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main()
+{
+    int a_q;
+    int b_q=1;
+    int c_q=3;
+    int d_q=5;
+    int a_p=500;
+    int b_p=700;
+    float b_pdis=0.2;
+    int c_p=750;
+    float d_p=55.50;
+    printf("Number of Pant=");
+    scanf("\n%d",&a_q);
+    float a_a,b_b,b_a, c_a,d_a, t_a;
+    a_a=a_q*a_p;
+    b_b=b_p-(b_p*b_pdis);
+    b_a=b_q*b_b;
+    c_a=c_q*c_p;
+    d_a=d_q*d_p;
+    t_a=a_a+b_a+c_a+d_a;
+    printf("------------------------------------------------------ \n");
+    printf("                  POTHIS TEXTILE    \n");
+    printf("                     CHENNAI         \n");
+    printf("------------------------------------------------------\n");
+    printf(" s.no    Name      Quantity     Price     Amount\n");
+    printf("------------------------------------------------------- \n");
+    printf(" 1       Pant         %d         %d         %.1f\n",a_q,a_p,a_a);
+    printf(" 2       Pant         %d         %d         %.1f\n",b_q,b_p,b_a);
+    printf(" 3       Shirt        %d         %d         %.1f\n",c_q,c_p,c_a);
+    printf(" 4      Kerchief      %d         %.2f       %.2f\n",d_q,d_p,d_a);
+    printf("------------------------------------------------------- \n");
+    printf("                               Total Amount=%.2f\n",t_a);
+    printf("--------------------------------------------------------\n");
+}
