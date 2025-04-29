@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int a=83;
+    int b;
+    printf("Enter the USD Amount=$");
+    scanf("%d" ,&b);
+    int c;
+    c=b*a;
+    printf("-------------------------------------\n");
+    printf("\tUSD Amount=$%d\n",b);
+    printf("\tINR Amount=₹%d\n", c) ;
+    printf("-------------------------------------\n");
+    return 0;
+}
