@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+  float g;
+  scanf("%f",&g);
+  if (g<50)
+  {
+    printf("F grade");
+  }
+  else if ((g>=50)&&(g<=60))
+  {
+    printf("d grade");
+  }
+  else if ((g>60)&&(g<=70))
+  {
+    printf("C grade");
+  }
+  else if ((g>70)&&(g<=85))
+  {
+    printf("B grade");
+  }
+  else
+  {
+    printf("S grade");
+  }
+}
