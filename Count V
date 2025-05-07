@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+  int i;
+  char n[10]="jeevan";
+  int count=0;
+  for(i=0;i<10;i++)
+  {
+    if (n[i]=='a'||n[i]=='e'||n[i]=='i'||n[i]=='o'||n[i]=='u'||n[i]=='A'||n[i]=='I'||n[i]=='O'||n[i]=='U')
+    {
+      count++;
+    }
+  }
+  printf("%d",count);
+  return 0;
+}
