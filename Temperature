@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+  int t;
+  scanf("%d",&t);
+  if((t>50)&&(t<100)){
+    printf("%d is Warm",t);
+  }
+  else if(t>100){
+    printf("%d is Hot",t);
+  }
+  else if(t<50){
+    printf("%d is Cold",t);
+  }
+  return 0;
+}
