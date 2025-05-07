@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+int main()
+{
+ int a,b,maxi:
+ scanf("%d%d",&a,&b);
+ max=a;
+ for(maxi=a;a<=maxi;maxi++)
+   {
+     if((maxi%a==0)&&(maxi%b==0))
+       {
+          printf("%d",maxi);
+          break;
+       }
+    }
+    return 0;
+ }
