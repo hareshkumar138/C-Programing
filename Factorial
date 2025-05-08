@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+  int n,i;
+  scanf("%d",&n);
+  int mu=1;
+  for(i=1;i<=n;i++)
+  {
+    mu=mu*i;
+  }
+  printf("%d factorial of %d",mu,n);
+  return 0;
+}
