@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+  int n[5],i,min=854750,a;
+  scanf("%d%d%d%d%d",&n[0],&n[1],&n[2],&n[3],&n[4]);
+  for(a=0;a<5;a++)
+  {
+    if(min>n[a])
+    {
+      min=n[a];
+    }
+  }
+  printf("%d",min);
+}
