@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+  int n[5]={10,20,30,50,5};
+  int b2=n[3],i;
+  int b=n[1],a;
+  for(i=0;i<5;i++)
+  {
+  
+    if (b>n[i])
+    {
+       b=n[i];
+    }
+  }
+  for(a=0;a<5;a++)
+  {
+   if (n[a]>b)
+    {
+      if (b2>n[a])
+      {
+        b2=n[a];
+      }
+    }
+  }
+  printf("%d 2nd min\n%d min",b2,b);
+  return 0;
+}
