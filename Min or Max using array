@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+  int n[5]={10,20,30,50,5};
+  int a=n[0],i;
+  int b=n[1];
+  for(i=0;i<5;i++)
+  {
+    if (a<n[i])
+    {
+       a=n[i];
+    }
+    if (b>n[i])
+    {
+       b=n[i];
+    }
+  }
+  printf("%d is maximum \n%d is minimum",a,b);
+  return 0;
+}
