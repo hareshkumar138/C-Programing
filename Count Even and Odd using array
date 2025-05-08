@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+  int n[5]={10,24,38,55,5},evencount=0,oddcount=0,i;
+ for(i=0;i<5;i++)
+  {
+    if (n[i]%2==0)
+    {
+      evencount+=1;
+    }
+    else
+    {
+      oddcount+=1;
+    }
+  }
+  printf("%d is no of even element\n%d is no of odd element",evencount,oddcount);
+  return 0;
+}
