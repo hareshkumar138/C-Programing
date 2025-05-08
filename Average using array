@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+  int n[5],i,avg=1,sum=0,a;
+  scanf("%d%d%d%d%d",&n[0],&n[1],&n[2],&n[3],&n[4]);
+  for(a=0;a<5;a++)
+  {
+   sum=sum+n[a];
+    
+  }
+  avg=sum/5;
+  printf("%d",avg);
+  return 0;
+}
