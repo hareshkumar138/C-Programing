@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+  int n[5]={10,20,30,50,5},even=0,odd=0,i;
+ for(i=0;i<5;i++)
+  {
+    if (i%2==0)
+    {
+      even+=n[i];
+    }
+    else
+    {
+      odd+=n[i];
+    }
+  }
+  printf("%d is sum of even positon \n%d is sum of odd position",even,odd);
+  return 0;
+}
