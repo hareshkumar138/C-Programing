@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+struct movie
+{
+  char title[50];
+  char dir[50];
+  char act[50];
+  char date[50];
+};
+int main()
+{
+  struct movie m1,m2;
+  strcpy(m1.title,"safkfafsf");
+  strcpy(m1.dir,"kamlwad");
+  strcpy(m1.act,"askfhsaf");
+  strcpy(m1.date,"02-05-2026");
+  printf("title:%s\ndirector:%s\nactor:%s\nrelease date:%s\n",m1.title,m1.dir,m1.act,m1.date);
+  
+  strcpy(m2.title,"safhsa");
+  strcpy(m2.dir,"rajijksafh");
+  strcpy(m2.act,"surqbafo");
+  strcpy(m2.date,"04-05-2027");
+  printf("title:%s\ndirector:%s\nactor:%s\nrelease date:%s\n",m2.title,m2.dir,m2.act,m2.date);
+  return 0;
+}
