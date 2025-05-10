@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+struct c
+{
+  char m[50];
+  char n[50];
+  int y;
+};
+int main()
+{
+  struct c c1,c2,c3;
+  fgets(c1.m,sizeof(c1.m),stdin);
+  fgets(c1.n,sizeof(c1.n),stdin);
+  scanf("%d",&c1.y);
+  
+  printf("Make:%s",c1.m);
+  printf("Modle:%s",c1.n);
+  printf("Year:%d\n",c1.y);
+  
+  fgets(c2.m,sizeof(c2.m),stdin);
+  fgets(c2.n,sizeof(c2.n),stdin);
+  scanf("%d",&c2.y);
+  
+  printf("Make:%s",c2.m);
+  printf("Modle:%s",c2.n);
+  printf("Year:%d\n",c2.y);
+  
+  fgets(c3.m,sizeof(c3.m),stdin);
+  fgets(c3.n,sizeof(c3.n),stdin);
+  scanf("%d",&c3.y);
+  
+  printf("Make:%s",c3.m);
+  printf("Modle:%s",c3.n);
+  printf("Year:%d\n",c3.y);
+}
