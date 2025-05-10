@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+struct s
+{
+  char t[50];
+  char a[50];
+  char ab[50];
+  float l;
+};
+int main()
+{
+  struct s s1,s2;
+  fgets(s1.t,sizeof(s1.t),stdin);
+  fgets(s1.a,sizeof(s1.a),stdin);
+  fgets(s1.ab,sizeof(s1.ab),stdin);
+  scanf("%f",&s1.l);
+  fgets(s2.t,sizeof(s2.t),stdin);
+  fgets(s2.a,sizeof(s2.a),stdin);
+  fgets(s2.ab,sizeof(s2.ab),stdin);
+  scanf("%f",&s2.l);
+
+  printf("Title:%s",s1.t);
+  printf("Artist:%s",s1.a);
+  printf("Album:%s",s1.ab);
+  printf("Length:%.2f\n",s1.l);
+  
+  printf("Title:%s",s2.t);
+  printf("Artist:%s",s2.a);
+  printf("Album:%s",s2.ab);
+  printf("Length:%.2f\n",s2.l);
+  return 0;
+}
