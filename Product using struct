@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+struct c
+{
+  char n[50];
+  int p,q;
+};
+int main()
+{
+  struct c c1,c2;
+  fgets(c1.n,sizeof(c1.n),stdin);
+  c1.p=120;
+  c1.q=60;
+  
+  fgets(c2.n,sizeof(c2.n),stdin);
+  c2.p=25;
+  c2.q=30;
+
+  int s;
+  s=(c1.p*c1.q)+(c2.p*c2.q);
+  printf("%d",s);
+}
