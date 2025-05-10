@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+struct com
+{
+  char cpu[50];
+  char manu[50];
+  int clkspeed;
+  int no_of_cores;
+};
+int main()
+{
+  struct com c1,c2;
+  strcpy(c1.cpu,"sasaf");
+  strcpy(c1.manu,"nnalsald");
+  scanf("%d",&c1.clkspeed);
+  scanf("%d",&c1.no_of_cores);
+  printf("cpu:%s\nmanufactuer:%s\nclock speed:%d\nno of cores:%d\n",c1.cpu,c1.manu,c1.clkspeed,c1.no_of_cores);
+  
+  strcpy(c2.cpu,"safsaf");
+  strcpy(c2.manu,"jhkl");
+  scanf("%d",&c2.clkspeed);
+  scanf("%d",&c2.no_of_cores);
+  printf("cpu:%s\nmanufactuer:%s\nclock speed:%d\nno of corea:%d",c2.cpu,c2.manu,c2.clkspeed,c2.no_of_cores);
+  return 0;
+}
