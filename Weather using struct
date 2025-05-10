@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+struct weathers
+{
+  char temp[20];
+  char humi[20];
+  int  w;
+};
+int main()
+{
+  struct weathers w1,w2;
+  strcpy(w1.temp,"23 c");
+  strcpy(w1.humi,"55 c");
+  scanf("%d",&w1.w);
+  printf("temperature=%s\nhumidity=%s\nwind speed=%dkm/hr\n",w1.temp,w1.humi,w1.w);
+  strcpy(w2.temp,"55 c");
+  strcpy(w2.humi,"71 c");
+  scanf("%d",&w2.w);
+  printf("temperature=%s\nhumidity=%s\nwind speed=%dkm/hr",w2.temp,w2.humi,w2.w);
+  return 0;
+}
