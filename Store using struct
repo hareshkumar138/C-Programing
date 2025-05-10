@@ -1,0 +1,18 @@
+#include<stdio.h>
+struct age
+{
+  int day;
+  int month;
+  int year;
+};
+int main()
+{
+  struct age a1;
+  scanf("%d",&a1.day);
+  scanf("%d",&a1.month);
+  scanf("%d",&a1.year);
+  int current_year;
+  scanf("%d",&current_year);
+  int age2=current_year-a1.year;
+  printf("%d",age2);
+}
