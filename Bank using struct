@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+struct bank
+{
+  char name[50];
+  char add[100];
+  int p;
+  float a;
+};
+int main()
+{
+  struct bank b1,b2;
+  strcpy(b1.name,"jevvNAB");
+  strcpy(b1.add,"ggasfjksajkfk");
+  scanf("%d",&b1.p);
+  scanf("%f",&b1.a);
+  printf("name of holder:%s\n",b1.name);
+  printf("address:%s\n",b1.add);
+  printf("phone number:%d\naccount balance:%.2f\n",b1.p,b1.a);
+  
+  strcpy(b2.name,"balksji");
+  strcpy(b2.add,"asfashgpagsag");
+  scanf("%d",&b2.p);
+  scanf("%f",&b2.a);
+  printf("name of holder:%s\naddress:%s\nphone number:%d\naccount balance:%.2f\n",b2.name,b2.add,b2.p,b2.a);
+  return 0;
+}
