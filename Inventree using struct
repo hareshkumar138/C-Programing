@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+struct product
+{
+  char name[50];
+  int noofunit;
+  int price;
+};
+int main()
+{
+  struct product p1,p2;
+  strcpy(p1.name,"jewq");
+  p1.noofunit=6000;
+  p1.price=200000;
+  
+  strcpy(p2.name,"ashfksa");
+  p2.noofunit=70;
+  p2.price=30012;
+  struct product add;
+  add.price=(p1.price*p1.noofunit)+(p2.price*p2.noofunit);
+  printf("%d",add.price);
+  return 0;
+} 
